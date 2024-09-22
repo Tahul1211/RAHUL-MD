@@ -16,3 +16,8 @@
 <p align="center">
 <a href="https://github.com/rahultechser"><img title="Author" src="https://img.shields.io/badge/OWNER-RAHUL_DEBNATH-black?style=for-the-badge&logo=github"></a>
 <p/>
+
+<p align="center"><img src="https://profile-counter.glitch.me/{RAHUL-MD}/count.svg" alt="rahultechser :: Visitor's Count" /></p>
+
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Ribeye&size=50&pause=1000&color=3F00FF&center=true&width=900&height=100&lines=This-Is%20RAHUL-MD;%20Multi-Device%20WhatsApp%20Bot;%20Create%20By%20RAHUL%20DEBNATH)
+<p align="center">
