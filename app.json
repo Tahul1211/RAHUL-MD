@@ -1,8 +1,8 @@
 {
-  "name": "YourBot",
-  "description": "Javascript WhatsApp bot made by YourName",
-  "logo": "https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg",
-  "keywords": ["bot"],
+  "name": "RAHUL-MD",
+  "description": "Javascript Whatsapp Bot Made By Rahul Debnath",
+  "logo": "https://i.imgur.com/kGG7HSv.jpeg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "multi device", "rahul-md"],
   "success_url": "/",
 
   "env": {
