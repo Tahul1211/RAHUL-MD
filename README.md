@@ -12,3 +12,7 @@
 <p align="center"> This is a Cool Multi-Device WhatsApp bot developed by Rahul Debnath This Bot Is Made For Help And Enjoyment
  
   </a>
+</p>
+<p align="center">
+<a href="https://github.com/rahultechser"><img title="Author" src="https://img.shields.io/badge/OWNER-RAHUL_DEBNATH-black?style=for-the-badge&logo=github"></a>
+<p/>
