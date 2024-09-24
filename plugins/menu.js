@@ -51,7 +51,7 @@ ${menu.search}
 
 *_POWERED BY RAHUL DEBNATH 💗🫶🏻_*
 `
-await conn.sendMessage(from,{text:madeMenu},{quoted:mek})
+await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/3569f630b0ca83652b49e.jpg"},caption:madeMenu},{quoted:mek})
 
 
 
