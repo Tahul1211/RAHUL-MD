@@ -6,8 +6,8 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 SESSION_ID: process.env.SESSION_ID || "",
+MODE: process.evn.MODE || "public",
 ALIVE_IMG: process.env.ALIVE_IMG || "https://telegra.ph/file/3569f630b0ca83652b49e.jpg",
-ALIVE_MSG: process.env.ALIVE_MSG || "Hello, Rahul-Md Is Alive Now...!!",
-AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
-MODE: process.evn.MODE || "public"
+ALIVE_MSG: process.env.ALIVE_MSG || "Hello, Rahul-Md Is Alive Now...!!",    
+AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true"
 }
