@@ -148,8 +148,8 @@ m.react("👻")
 //========================================      
 //=================WORK-type===========================================================
 if(!isOwner && config.MODE === "private") return
-if(!isOwner && isGroup && config.MODE === "inbox") return
-if(!isOwner && !isGroup && config.MODE === "groups") return
+if(!isOwner && isGroup && config.MODE === "public") return
+if(!isOwner && !isGroup && config.MODE === "private") return
 //============================================================================
 
 
