@@ -42,7 +42,7 @@ console.log("✔️ SQL Database Connected")
 // ===========SESSION===========
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-const sessdata = config.SESSION_ID.split("naruto-md@;;;")[1]
+const sessdata = config.SESSION_ID.split("RAHUL-MD~")[1]
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
@@ -58,12 +58,12 @@ const port = process.env.PORT || 8000;
 async function connectToWA() {
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 const { version, isLatest } = await fetchLatestBaileysVersion()
-console.log(`🍥 Naruto Md using WA v${version.join('.')}, isLatest: ${isLatest}`)
+console.log(`☠️ Rahul Md Using WA v${version.join('.')}, isLatest: ${isLatest}`)
 const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
 printQRInTerminal: true,
-browser: ["Naruto-Md", "safari", "3.3"],
+browser: ["RAHUL-MD", "safari", "3.3"],
 auth: state,
 getMessage: async (key) => {
             if (store) {
@@ -71,7 +71,7 @@ getMessage: async (key) => {
                 return msg.message || undefined
             }
             return {
-                conversation: "Naruto-Md Web 2.1"
+                conversation: "Rahul-Md Web 2.1"
             }
         }})
 
@@ -82,15 +82,15 @@ if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
 connectToWA()
 }
 } else if (connection === 'open') {
-console.log('✅ Plugin installed and Connected...')
+console.log('⚙️ Plugin Installed And Connected...')
 const path = require('path');
 fs.readdirSync("./plugins/").forEach((plugin) => {
 if (path.extname(plugin).toLowerCase() == ".js") {
 require("./plugins/" + plugin);
 }
 });
-console.log('📚 All Plugins installed')
-console.log('🐉 Naruto Md WhatsApp Bot connected ✅')
+console.log('All Plugins Installed 🥂')
+console.log('Rahul Md Whatsapp Bot Connected 🛰️')
 //const botada = jidNormalizedUser(conn.user.id)   
 //conn.sendMessage(botada, { image: { url : "https://imgur.com/a/5jymNs5.jpeg" } , caption: "*Naruto-Md Connected to WhatsApp* ✔️\n\n_This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances._\n\n🔰 *Official GitHub* - ```https://github.com/naveedbro```\n\n🪀 *WhatsApp Group* - ```https://rb.gy/5zx1lv```\n\n🧿 *Announcement Channel* - ```https://rb.gy/54ccrp```\n\n*ᴏꜰꜰɪᴄɪᴀʟ*\n*ᴀʟʟ ʀɪɢʜᴛ ʀᴇꜱᴇʀᴠᴇᴅ - ᴛᴇᴀᴍ*"})
 }
