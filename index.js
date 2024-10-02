@@ -975,13 +975,13 @@ menuc += `📪 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *PHOTO EDIT COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *PHOTO EDIT COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 }
@@ -1064,7 +1064,7 @@ console.log(isError)}
 })
 }
 app.get("/", (req, res) => {
-res.send("*Naruto-Md WhatsApp Bot Working successfully..!*");
+res.send("*Rahul-Md WhatsApp Bot Working Successfully..!*");
 });
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 setTimeout(() => {
