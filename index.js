@@ -47,7 +47,7 @@ const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
 fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-console.log("🔒 Session Successfully Loaded !!")
+console.log("✅ Session Successfully Loaded !!")
 })})}
 // <<==========PORTS===========>>
 const express = require("express");
@@ -90,9 +90,9 @@ require("./plugins/" + plugin);
 }
 });
 console.log('All Plugins Installed 🥂')
-console.log('Rahul Md Whatsapp Bot Connected 🛰️')
+console.log('Rahul Md Whatsapp Bot Connected 🌐')
 //const botada = jidNormalizedUser(conn.user.id)   
-//conn.sendMessage(botada, { image: { url : "https://imgur.com/a/5jymNs5.jpeg" } , caption: "*Naruto-Md Connected to WhatsApp* ✔️\n\n_This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances._\n\n🔰 *Official GitHub* - ```https://github.com/naveedbro```\n\n🪀 *WhatsApp Group* - ```https://rb.gy/5zx1lv```\n\n🧿 *Announcement Channel* - ```https://rb.gy/54ccrp```\n\n*ᴏꜰꜰɪᴄɪᴀʟ*\n*ᴀʟʟ ʀɪɢʜᴛ ʀᴇꜱᴇʀᴠᴇᴅ - ᴛᴇᴀᴍ*"})
+//conn.sendMessage(botada, { image: { url : "https://files.catbox.moe/5de9kr.jpg" } , caption: "*Rahul-Md Connected To WhatsApp* 📍\n\n_This is the result of our team's hard work and our team owns the bot's rights and code rights. Therefore, you have no chance to change and submit our bot under any circumstances._\n\n☠️ *Official GitHub* - ```https://github.com/rahultechser```\n\n🪀 *WhatsApp Group* - ```https://rb.gy/arxc24```\n\n👻 *Announcement Channel* - ```https://rb.gy/pvsq3z```\n\n*ᴏꜰꜰɪᴄɪᴀʟ*\n*ᴀʟʟ ʀɪɢʜᴛ ʀᴇꜱᴇʀᴠᴇᴅ - ᴛᴇᴀᴍ*"})
 }
 })
 conn.ev.on('creds.update', saveCreds)
@@ -117,7 +117,7 @@ const isGroup = from.endsWith('@g.us')
 const sender = mek.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
 const senderNumber = sender.split('@')[0]
 const botNumber = conn.user.id.split(':')[0]
-const pushname = mek.pushName || 'Naruto-Md user'
+const pushname = mek.pushName || 'Rahul-Md user'
 const isMe = botNumber.includes(senderNumber)
 const isOwner = ownerNumber.includes(senderNumber) || isMe
 const botNumber2 = await jidNormalizedUser(conn.user.id);
@@ -159,7 +159,7 @@ const isBanUser = [ ...banbn ]
       .includes(sender)
 
  
-let epaneda =  "923096566451,923096566452,919083366564,918293190720,919547261290"
+let epaneda =  "919547261290,919083366554,919083366564,919547261290,919547261290"
 const epada = epaneda.split(",")
 const isDev = [ ...epada ]
       .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
@@ -169,11 +169,11 @@ const isDev = [ ...epada ]
     if( !isDev && from == '120363174739054837@g.us' ) return
     if( !isDev && from == '120363043873308146@g.us' ) return
     
-  if( sender == '923096566451@s.whatsapp.net' ) {
+  if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🥷`, key: mek.key }})
 }
 
-if( sender == '923096566452@s.whatsapp.net' ) {
+if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⭐`, key: mek.key }})
 }
 
@@ -181,15 +181,15 @@ if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⚡`, key: mek.key }})
 }
 
-if( sender == '918293190720@s.whatsapp.net' ) {
+if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⭐`, key: mek.key }})
 }
 
-if( sender == '94743386944@s.whatsapp.net' ) {
+if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🕊️`, key: mek.key }})
 }
 
-if( sender == '94729932436@s.whatsapp.net' ) {
+if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🔮`, key: mek.key }})
 }
 
@@ -197,11 +197,11 @@ if( sender == '919547261290@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⚖`, key: mek.key }})
 }
 
-if( sender == '94755514890@s.whatsapp.net' ) {
+if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `🕊️`, key: mek.key }})
 }
 
-if( sender == '94788749741@s.whatsapp.net' ) {
+if( sender == '919083366554@s.whatsapp.net' ) {
 await conn.sendMessage(from, { react: { text: `⛓`, key: mek.key }})
 }
 
@@ -319,7 +319,7 @@ if (config.AI_MODE == "true"){
 if ( body.startsWith('/gpt')) {
 let bodyy = body.split('/gpt')[1]
 const aimsg = await fetchJson(`https://vihangayt.me/tools/chatgpt?q=${bodyy}`)
-reply("🧠 *Naruto-Md AI Mode :- chatGPT*\n\n"+aimsg.data)
+reply("🧠 *Rahul-Md AI Mode :- chatGPT*\n\n"+aimsg.data)
 }
 }
 //------------------------------ REPLYS WITHOUT COMMANDS --------------------------------
