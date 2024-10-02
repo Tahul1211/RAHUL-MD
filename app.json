@@ -1,8 +1,8 @@
 {
-    "name": "RAHUL-MD",
+    "name": "Naruto-Md",
     "description": "Javascript Whatsapp Bot Made By Rahul Debnath",
     "repository": "https://github.com/rahultechser/RAHUL-MD",
-    "logo": "https://telegra.ph/file/3569f630b0ca83652b49e.jpg",
+    "logo": "https://files.catbox.moe/5de9kr.jpg",
     "keywords": [
         "nodejs",
         "Bot",
@@ -13,7 +13,7 @@
     "env": {
         "SESSION_ID": {
             "description": "Type the Session-ID you got from scaning QR",
-            "required": false,
+            "required": true,
             "value": ""
         },
         "DATABASE_URL": {
@@ -51,7 +51,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "standard-1x"
+            "size": "free"
         }
     }
 }
