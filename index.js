@@ -324,7 +324,7 @@ reply("🧠 *Rahul-Md AI Mode :- chatGPT*\n\n"+aimsg.data)
 }
 //------------------------------ REPLYS WITHOUT COMMANDS --------------------------------
 if ( body.startsWith('/prefix_help')) {
-reply("📚 *Bot's Running prefix is* ```" + config.PREFIX + "```")
+reply("💉 *Bot's Running Prefix is* ```" + config.PREFIX + "```")
 }
 
 // ---------------------------- REPLY MESSAGE FUNCTIONS --------------------------------
@@ -363,9 +363,9 @@ if ( config.AUTO_REACT == 'true' ) {
 await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 }
 
-return await conn.sendMessage(from, { document : { url : await dj.video['240p'].download() }  ,caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
+return await conn.sendMessage(from, { document : { url : await dj.video['240p'].download() }  ,caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
 }
-await conn.sendMessage(from, { video: {url: await dj.video['240p'].download() }, caption: dj.title + "\n\n*ᴄʏʙᴇʀ-x ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅᴀʀᴋᴀʟᴘʜᴀxᴛᴇᴀᴍ ᴏꜰᴄ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: await dj.video['240p'].download() }, caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ : ᴠᴏʟ-ɪɪ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
     
     
 if ( config.AUTO_REACT == 'true' ) {
@@ -377,7 +377,7 @@ await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 if ( rew.includes('APK') ) {
 const getid = rew.split("ɪᴅ - ")[1]
 const app = await download(getid)
-await conn.sendMessage(from, { document : { url : app.dllink } , caption:"📦 *𝙰𝙿𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 📦\n\n📚 *App name : " + app.name + "*\n📂 *App Size : " + app.size + "*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${app.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : app.dllink } , caption:"📦 *𝙰𝙿𝙺 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 📦\n\n📚 *App name : " + app.name + "*\n📂 *App Size : " + app.size + "*\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${app.name}.apk` }, { quoted: mek })
 
 }
 if ( rew.includes('List Updated') ) {
@@ -390,13 +390,13 @@ if ( rew.includes('TIKTOK DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await fg.tiktok(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.play }, caption: ttdl.nickname + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.play }, caption: ttdl.nickname + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
 }
 if ( rew.includes('FB DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await getFBInfo(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.sd }, caption: "SD Quality\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.sd }, caption: "SD Quality\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
 }
 
 }
@@ -408,7 +408,7 @@ const getlink = rew.split("ɪᴅ - ")[1]
 const fulllink = 'https://youtube.com/watch?v=' + getlink
 const dj = await dl.youtubedl(fulllink)
 await conn.sendMessage(from, { react: { text: `⬆️`, key: mek.key }})
-await conn.sendMessage(from, { document : { url : await dj.audio['128kbps'].download() } , caption: dj.title+ "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'audio/mp3', fileName: `${dj.title}.mp3` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : await dj.audio['128kbps'].download() } , caption: dj.title+ "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'audio/mp3', fileName: `${dj.title}.mp3` }, { quoted: mek })
 await conn.sendMessage(from, { react: { text: `✔️`, key: mek.key }})
 
 }
@@ -429,9 +429,9 @@ if ( config.AUTO_REACT == 'true' ) {
 await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 }
 
-return await conn.sendMessage(from, { document : { url : await dj.video['360p'].download() }  ,caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
+return await conn.sendMessage(from, { document : { url : await dj.video['360p'].download() }  ,caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
 }
-await conn.sendMessage(from, { video: {url: await dj.video['360p'].download() }, caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: await dj.video['360p'].download() }, caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
     
     
 if ( config.AUTO_REACT == 'true' ) {
@@ -455,8 +455,8 @@ const msgg =`
 
 📱 Play Store Link -: https://play.google.com/store/apps/details?id=${app.package}
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
 await conn.sendMessage(from, { image: { url : app.icon } , caption: msgg }, { quoted: mek })
 
 }
@@ -464,13 +464,13 @@ if ( rew.includes('TIKTOK DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await fg.tiktok(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.wmplay }, caption: ttdl.nickname + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.wmplay }, caption: ttdl.nickname + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
 }
 if ( rew.includes('FB DOWNLOADER') ) {
 const getlink = rew.split("Link -: ")[1]
 const fulllink = getlink.split("_*")[0]
 let ttdl = await getFBInfo(fulllink)
-await conn.sendMessage(from, { video: {url: ttdl.hd }, caption: "HD Quality\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: ttdl.hd }, caption: "HD Quality\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
 }
 
 }
@@ -493,9 +493,9 @@ if ( config.AUTO_REACT == 'true' ) {
 await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 }
 
-return await conn.sendMessage(from, { document : { url : await dj.video['720p'].download() }  ,caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
+return await conn.sendMessage(from, { document : { url : await dj.video['720p'].download() }  ,caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
 }
-await conn.sendMessage(from, { video: {url: await dj.video['720p'].download() }, caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: await dj.video['720p'].download() }, caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
     
     
 if ( config.AUTO_REACT == 'true' ) {
@@ -532,9 +532,9 @@ if ( config.AUTO_REACT == 'true' ) {
 await conn.sendMessage(from, { react: { text: `☑️`, key: mek.key }})
 }
 
-return await conn.sendMessage(from, { document : { url : await dj.video['1080p'].download() }  ,caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
+return await conn.sendMessage(from, { document : { url : await dj.video['1080p'].download() }  ,caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'video/mp4', fileName: `${dj.title}.mp4` }, { quoted: mek })
 }
-await conn.sendMessage(from, { video: {url: await dj.video['1080p'].download() }, caption: dj.title + "\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" }, { quoted: mek })  
+await conn.sendMessage(from, { video: {url: await dj.video['1080p'].download() }, caption: dj.title + "\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" }, { quoted: mek })  
     
     
 if ( config.AUTO_REACT == 'true' ) {
@@ -560,7 +560,7 @@ menuc += `⏲️ *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *MAIN COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *MAIN COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
@@ -570,9 +570,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -596,7 +596,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['MODERATORS']: "923096566451"
+                        ['MODERATORS']: "919547261290"
                     }
                 });
 const resmsg =`*Moderator List Reseted* ✅
@@ -619,10 +619,10 @@ await db_pool.insert( "ALIVE_IMAGE" , getimage )
 const resmsg =`*Alive message and image Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Naruto-Md Fouad-WA') ) {
+if ( rew.includes('Rahul-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_whatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 }
@@ -641,7 +641,7 @@ menuc += `📥 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *DOWNLOAD COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *DOWNLOAD COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
@@ -651,9 +651,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg } , { quoted: mek } )
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg } , { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -677,7 +677,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['INBOX_USER']: "923096566451"
+                        ['INBOX_USER']: "919547261290"
                     }
                 });
 const resmsg =`*Inbox User List Reseted* ✅
@@ -696,10 +696,10 @@ await db_pool.insert( "OWNER_NUMBER" , data )
 const resmsg =`*Owner Number Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Naruto-Md Fouad-WA') ) {
+if ( rew.includes('Rahul-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_fmwhatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 
@@ -719,7 +719,7 @@ menuc += `🔎 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *SEARCH COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *SEARCH COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
@@ -729,9 +729,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Moderator Configuration') ) {
@@ -756,7 +756,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['BANNED_USER']: "923096566452"
+                        ['BANNED_USER']: "919547261290"
                     }
                 });
 const resmsg =`*Banned Users List Reseted* ✅
@@ -775,10 +775,10 @@ await db_pool.insert( "OWNER_NAME" , data )
 const resmsg =`*Owner Name Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Naruto-Md Fouad-WA') ) {
+if ( rew.includes('Rahul-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_gbwhatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 
@@ -797,7 +797,7 @@ menuc += `🧑‍🔧 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *PROFILE COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *PROFILE COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
@@ -807,9 +807,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg } , { quoted: mek })
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -824,10 +824,10 @@ await db_pool.insert( "OPENAI_KEY" , data )
 const resmsg =`*OpenAi Key Successfully Updated* ✅`
 reply(resmsg)
 }
-if ( rew.includes('Naruto-Md Fouad-WA') ) {
+if ( rew.includes('Rahul-Md Fouad-WA') ) {
 const getmod = await mods()
 let moddata = getmod.com_yowhatsapp
-await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
+await conn.sendMessage(from, { document : { url : moddata.link } , caption:"*Downloaded from https://fmmods.com/fouad-whatsapp/*\n\n*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*" ,mimetype: 'application/vnd.android.package-archive', fileName: `${moddata.name}.apk` }, { quoted: mek })
 
 }
 
@@ -846,7 +846,7 @@ menuc += `🪀 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *GROUP COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *GROUP COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
@@ -856,9 +856,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg } , { quoted: mek })
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg } , { quoted: mek })
 
 }
 if ( rew.includes('Details Update Tool') ) {
@@ -888,7 +888,7 @@ menuc += `📪 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *EXTRA COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *EXTRA COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
@@ -898,9 +898,9 @@ ${menuc}
 R. Rate us
 S. System information 
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Database Reset Function') ) {
@@ -908,7 +908,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 const db_pool = new DBM({
     db: config.DATABASE_URL
 })
-const data = await fetchJson("https://raw.githubusercontent.com/naveedbro/UPLOADS/main/JSON/info.json")
+const data = await fetchJson("https://raw.githubusercontent.com/rahultechser/UPLOADS/main/JSON/info.json")
 await db_pool.insert( "ALIVE_MESSAGE" , data.text )
 await db_pool.insert( "ALIVE_IMAGE" , data.image )
 const resmsg =`*Alive message and image Successfully Reseted* ✅`
@@ -939,13 +939,13 @@ menuc += `🌅 *Pattern - ${commands[i].pattern}* - _Enter your Text_
 `
 }}};
 
-let menumg = `🔐 *TEXT TO IMAGE COMMAND LIST-NARUTO-MD*
+let menumg = `🔐 *TEXT TO IMAGE COMMAND LIST-RAHUL-MD*
 
 ${menuc}
 
-*ɴᴀʀᴜᴛᴏ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
-*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀɴᴅᴇᴠᴇʟᴏᴘ*`
-await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/wzrddk.jpg" }, caption: menumg }, { quoted: mek } )
+*ʀᴀʜᴜʟ-ᴍᴅ ᴍᴜʟᴛɪ ᴅᴇᴠɪᴄᴇ ʙᴏᴛ*
+*ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʀᴀʜᴜʟ ᴅᴇʙɴᴀᴛʜ*`
+await conn.sendMessage(from, { image: { url: "https://files.catbox.moe/5de9kr.jpg" }, caption: menumg }, { quoted: mek } )
 
 }
 if ( rew.includes('Details Update Tool') ) {
