@@ -159,7 +159,7 @@ const isBanUser = [ ...banbn ]
       .includes(sender)
 
  
-let epaneda =  "919547261290,919083366554,919083366564,919547261290,919547261290"
+let epaneda =  "919547261290,919083366554,919083366564,919074692450"
 const epada = epaneda.split(",")
 const isDev = [ ...epada ]
       .map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net")
@@ -168,45 +168,17 @@ const isDev = [ ...epada ]
     if( !isDev && from == '120363030304247368@g.us' ) return
     if( !isDev && from == '120363174739054837@g.us' ) return
     if( !isDev && from == '120363043873308146@g.us' ) return
+
     
-  if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `🥷`, key: mek.key }})
-}
-
-if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `⭐`, key: mek.key }})
-}
-
-if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `⚡`, key: mek.key }})
-}
-
-if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `⭐`, key: mek.key }})
-}
-
-if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `🕊️`, key: mek.key }})
-}
-
-if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `🔮`, key: mek.key }})
+if( sender == '919074692450@s.whatsapp.net' ) {
+await conn.sendMessage(from, { react: { text: `💻`, key: mek.key }})
 }
 
 if( sender == '919547261290@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `⚖`, key: mek.key }})
+await conn.sendMessage(from, { react: { text: `💻`, key: mek.key }})
 }
-
-if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `🕊️`, key: mek.key }})
-}
-
-if( sender == '919083366554@s.whatsapp.net' ) {
-await conn.sendMessage(from, { react: { text: `⛓`, key: mek.key }})
-}
-
     
-    if ( config.WORK_TYPE == "only_group" ) {
+if ( config.WORK_TYPE == "only_group" ) {
 if ( !isGroup && isCmd && !isDev && !isCreator && !isPersUser ) return 
       }
       
@@ -443,7 +415,7 @@ if ( rew.includes('APK') ) {
 const getid = rew.split("ɪᴅ - ")[1]
 const app = await download(getid)
 const msgg =`
-*NARUTO-MD APK INFORMATIONS*
+*RAHUL-MD APK INFORMATIONS*
 
 📚 *App name -: ${app.name}*
 
@@ -560,7 +532,7 @@ menuc += `⏲️ *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *MAIN COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD MAIN COMMAND LIST*
 
 ${menuc}
 
@@ -596,7 +568,7 @@ if ( !isDev && !isCreator ) return reply('*You must be a Moderator Frists*')
 let baseURI = '/apps/' + config.HEROKU_APP_NAME
 await heroku.patch(baseURI + '/config-vars', {
                     body: {
-                        ['MODERATORS']: "919547261290"
+                        ['MODERATORS']: "919547261290, 919074692450"
                     }
                 });
 const resmsg =`*Moderator List Reseted* ✅
@@ -641,7 +613,7 @@ menuc += `📥 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *DOWNLOAD COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD DOWNLOAD COMMAND LIST*
 
 ${menuc}
 
@@ -719,7 +691,7 @@ menuc += `🔎 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *SEARCH COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD SEARCH COMMAND LIST*
 
 ${menuc}
 
@@ -797,7 +769,7 @@ menuc += `🧑‍🔧 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *PROFILE COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD PROFILE COMMAND LIST*
 
 ${menuc}
 
@@ -846,7 +818,7 @@ menuc += `🪀 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *GROUP COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD GROUP COMMAND LIST*
 
 ${menuc}
 
@@ -888,7 +860,7 @@ menuc += `📪 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *EXTRA COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD EXTRA COMMAND LIST*
 
 ${menuc}
 
@@ -939,7 +911,7 @@ menuc += `🌅 *Pattern - ${commands[i].pattern}* - _Enter your Text_
 `
 }}};
 
-let menumg = `🔐 *TEXT TO IMAGE COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD TEXT TO IMAGE COMMAND LIST*
 
 ${menuc}
 
@@ -975,7 +947,7 @@ menuc += `📪 *Pattern - ${commands[i].pattern}*
 `
 }}};
 
-let menumg = `🔐 *PHOTO EDIT COMMAND LIST-RAHUL-MD*
+let menumg = `🔐 *RAHUL-MD PHOTO EDIT COMMAND LIST*
 
 ${menuc}
 
