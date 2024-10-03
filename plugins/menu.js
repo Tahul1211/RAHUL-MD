@@ -1,5 +1,5 @@
 const config = require('../config')
-const {cmd , commands} = require('../command')
+const {cmd, commands} = require('../command')
 
 cmd({
     pattern: "menu",
@@ -7,55 +7,65 @@ cmd({
     category: "main",
     filename: __filename
 },
-async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
-try{
-let menu = {
-main: '',
-download: '',
-group: '',
-owner: '',
-convert: '',
-search: ''
-};
+async(conn, mek, m, {from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
+try {
+    let menu = {
+        main: '',
+        download: '',
+        group: '',
+        owner: '',
+        convert: '',
+        search: ''
+    };
 
-for (let i = 0; i < commands.length; i++) {
-if (commands[i].pattern && !commands[i].dontAddCommandList) {
-menu[commands[i].category] += `.${commands[i].pattern}\n`;
- }
-}
+    for (let i = 0; i < commands.length; i++) {
+        if (commands[i].pattern && commands[i].category && !commands[i].dontAddCommandList) {
+            // Ensure category is valid before appending
+            if (menu[commands[i].category] !== undefined) {
+                menu[commands[i].category] += `.${commands[i].pattern}\n`;
+            }
+        }
+    }
 
-let madeMenu = `❤️‍🩹 *Hello ${pushname}*
+    let madeMenu = `❤️‍🩹 *Hello ${pushname}*
 💉 *DOWNLOAD MENU* 💉
 
-${menu.download}
+${menu.download || 'No commands available'}
 
 💉 *MAIN MENU* 💉
 
-${menu.main}
+${menu.main || 'No commands available'}
 
 💉 *GROUP MENU* 💉
 
-${menu.group}
+${menu.group || 'No commands available'}
 
 💉 *OWNER MENU* 💉
 
-${menu.owner}
+${menu.owner || 'No commands available'}
 
 💉 *CONVERT MENU* 💉
 
-${menu.convert}
+${menu.convert || 'No commands available'}
 
 💉 *SEARCH MENU* 💉
 
-${menu.search}
+${menu.search || 'No commands available'}
 
 *_POWERED BY RAHUL DEBNATH 💗🫶🏻_*
-`
-await conn.sendMessage(from,{image:{url:"https://telegra.ph/file/3569f630b0ca83652b49e.jpg"},caption:madeMenu},{quoted:mek})
+`;
 
+    await conn.sendMessage(from, {
+        image: {url: "https://telegra.ph/file/3569f630b0ca83652b49e.jpg"},
+        caption: madeMenu
+    }, {quoted: mek});
 
-
-}catch(e){
-console.log(e)
-reply(`${e}`)
+} catch (e) {
+    console.log(e);
+    if (typeof reply === 'function') {
+        reply(`${e}`);
+    } else {
+        console.error("Reply function is not defined.");
+    }
 }
+});
