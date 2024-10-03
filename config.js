@@ -8,7 +8,7 @@ module.exports = {
 DATABASE_URL: process.env.DATABASE_URL === undefined ? 'none' : process.env.DATABASE_URL,
 AUTO_MSG_READ : process.env.AUTO_MSG_READ === undefined ? 'false' : process.env.AUTO_MSG_READ,
 MODERATORS : process.env.MODERATORS === undefined ? "919547261290,919074692450" : process.env.MODERATORS ,
-SESSION_ID : process.env.SESSION_ID === undefined ? 'RAHUL-MD~NIpzlQjC#YVFFiJQfE37P6FTNaZrJDOXAQ-Iga3R6y91kME1OFyw' : process.env.SESSION_ID,
+SESSION_ID : process.env.SESSION_ID === undefined ? 'RAHUL-MD~sN4RmThb#GDH-TCTyLEY4A0tWmlfLVtFiS5q0NmX9WxXiBF7KwAE' : process.env.SESSION_ID,
 ANTI_BAD: process.env.ANTI_BAD === undefined ? 'false' : process.env.ANTI_BAD,
 MAX_SIZE: 2000,
 WORK_TYPE: process.env.WORK_TYPE === undefined ? 'private' : process.env.WORK_TYPE,
