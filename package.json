@@ -11,7 +11,7 @@
     },
     "author": "rahultechser",
     "dependencies": {
-        "@whiskeysockets/baileys": "^6.7.5",
+        "@whiskeysockets/baileys": "^6.6.0",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bochilteam/scraper-images" : "^1.0.2",
         "@blackamda/telegram-image-url" : "^1.0.0",
