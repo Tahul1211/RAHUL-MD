@@ -6,6 +6,7 @@ function convertToBool(text, fault = 'true') {
 }
 module.exports = {
 DATABASE_URL: process.env.DATABASE_URL === undefined ? 'none' : process.env.DATABASE_URL,
+ABHI_API: "https://abhi-api-khje.onrender.com",
 AUTO_MSG_READ : process.env.AUTO_MSG_READ === undefined ? 'false' : process.env.AUTO_MSG_READ,
 MODERATORS : process.env.MODERATORS === undefined ? "919547261290,919074692450" : process.env.MODERATORS ,
 SESSION_ID : process.env.SESSION_ID === undefined ? 'RAHUL-MD~sN4RmThb#GDH-TCTyLEY4A0tWmlfLVtFiS5q0NmX9WxXiBF7KwAE' : process.env.SESSION_ID,
