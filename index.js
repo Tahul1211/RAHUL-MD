@@ -62,7 +62,7 @@ console.log(`☠️ Rahul Md Using WA v${version.join('.')}, isLatest: ${isLates
 const conn = makeWASocket({
 version,
 logger: pino({ level: 'silent' }),
-printQRInTerminal: true,
+printQRInTerminal: false,
 browser: ["RAHUL-MD", "safari", "3.3"],
 auth: state,
 getMessage: async (key) => {
